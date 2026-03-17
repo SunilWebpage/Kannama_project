@@ -21,6 +21,9 @@ function Nav() {
                 <li className="nav-item">
                     <Link to="/photos" className="nav-link">Photos</Link>
                 </li>
+                <li className="nav-item">
+                    <Link to="/marry" className="nav-link">Question for you</Link>
+                </li>
             </ul>
         </nav>
     );

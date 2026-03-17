@@ -31,14 +31,16 @@ function Home() {
 
 
 
+
+
 <div>
 
     {/* <div className="polaroid p12 home_photo top-350 left-304 ">
         <img src="/public/assets/images/img-1.jpeg" alt="Fresh Bloom" className="w-200" />
     </div> */}
 
-     <div className="polaroid p12 home_photo top-350 right-304  ">
-        <img src={featuredPhoto} alt="Fresh bloom portrait" className="w-200" />
+     <div className="polaroid p12 home_photo top-350 right-204  ">
+        <img src={featuredPhoto} alt="Fresh bloom portrait" className="w-100" />
     </div>
 </div>
 

@@ -41,6 +41,12 @@ function Message() {
                         <img src={forestImage} alt="The Journey Ahead" className="advice-image" />
                     </div>
                 </section>
+
+                <button className='button' >
+                    <a href="/songs">Click here to listen songs</a>
+                </button>
+
+
             </main>
 
            

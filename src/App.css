@@ -28,6 +28,10 @@
   position: absolute;
   
 }
+
+.w-100{
+  width: 100%;
+}
 .fixed{
   position: fixed;
   z-index: 10;
@@ -38,8 +42,8 @@
 }
 
 
-.right-264{
-  right: 264px;
+.right-154{
+  right: 154px;
 }
 
 .right-564{
@@ -59,8 +63,8 @@
   left: 304px;
 }
 
-.right-304{
-  right: 304px;
+.right-204{
+  right: 204px;
 }
 
 

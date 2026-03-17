@@ -50,12 +50,14 @@ function Wish() {
                 </section>
 
                 <div>
-                    <div className="polaroid p12  top-350 right-264 h-500 fixed">
-        <img src={wishPhoto} alt="Fresh Bloom" className="w-200 h-500" />
-    </div>
+                    <div className="polaroid p12  top-350 right-154 h-500 fixed">
+                        <img src={wishPhoto} alt="Fresh Bloom" className="w-100 h-500" />
+                    </div>
 
-   
                 </div>
+
+
+                <button className="button"><a href="/message">You Have Some Message</a></button>
 
 
             </main>
