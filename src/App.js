@@ -9,8 +9,9 @@ import Photos from "./pages/photos";
 import Songs from "./pages/songs";
 
 function App() {
+  const basename = process.env.PUBLIC_URL || '/';
   return (
-    <Router>
+    <Router basename={basename}>
       <Nav/>
       <Routes>
         <Route path="/" element={<Home/>} /> 
