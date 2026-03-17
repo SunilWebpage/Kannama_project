@@ -1,0 +1,72 @@
+.wish-container {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  color: #333;
+  min-height: 100vh;
+}
+
+.wish-hero {
+  text-align: center;
+  margin-bottom: 4rem;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.wish-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  background: linear-gradient(45deg, #333, #666);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.wish-section {
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 2s ease-out;
+  border: 1px solid rgba(255, 218, 233, 0.3);
+}
+
+.verse-text {
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.love-message {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.decorative-divider {
+  width: 40px;
+  height: 2px;
+  background: #ffdae9;
+  margin: 1.5rem 0;
+  border-radius: 2px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .wish-title {
+    font-size: 2.5rem;
+  }
+  .verse-text {
+    font-size: 1.2rem;
+  }
+}
