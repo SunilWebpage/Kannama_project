@@ -67,10 +67,27 @@
 @media (max-width: 768px) {
   .nav-list {
     gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .nav-link {
     font-size: 0.9rem;
     padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    padding: 0.5rem 0;
+  }
+
+  .nav-list {
+    gap: 0.5rem 0.75rem;
+  }
+
+  .nav-link {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
   }
 }

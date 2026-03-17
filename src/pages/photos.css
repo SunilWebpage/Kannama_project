@@ -95,3 +95,32 @@
     margin-bottom: 1rem;
   }
 }
+
+@media (max-width: 600px) {
+  .photos-container {
+    padding: 3rem 1.25rem;
+  }
+
+  .photos-title {
+    font-size: 2.4rem;
+  }
+
+  .photos-subtitle {
+    font-size: 1rem;
+  }
+
+  .collage-grid {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .polaroid {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .polaroid img {
+    height: 220px;
+  }
+}

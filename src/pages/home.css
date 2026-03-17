@@ -103,3 +103,46 @@
     opacity: 0.5;
   }
 }
+
+@media (max-width: 600px) {
+  .home-container {
+    padding: 1.5rem 1rem;
+    min-height: calc(100vh - 64px);
+  }
+
+  .hero-section {
+    max-width: 100%;
+  }
+
+  .birthday-title {
+    font-size: 2.1rem;
+  }
+
+  .wishes-text {
+    font-size: 1rem;
+  }
+
+  .home_photo {
+    position: static;
+    margin: 1.5rem auto 0;
+    display: block;
+  }
+
+  .home_photo img {
+    width: min(280px, 85vw);
+  }
+}
+
+@media (max-width: 480px) {
+  .corner-photo {
+    display: none;
+  }
+
+  .heart-icon {
+    font-size: 1.6rem;
+  }
+  
+  .home_photo img {
+    width: min(260px, 85vw);
+  }
+}

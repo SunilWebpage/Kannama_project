@@ -136,12 +136,61 @@
     margin-bottom: 5rem;
     text-align: center;
   }
+
+  .advice-item.reverse .advice-image-wrapper {
+    order: 1;
+  }
+
+  .advice-item.reverse .advice-content {
+    order: 2;
+  }
   
   .message-title {
     font-size: 2.5rem;
   }
   
   .advice-content h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .message-container {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .message-header {
+    margin-bottom: 3rem;
+  }
+
+  .message-title {
+    font-size: 2.1rem;
+  }
+
+  .message-subtitle {
+    font-size: 1rem;
+  }
+
+  .advice-item, .advice-item.reverse {
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .advice-content h2 {
+    font-size: 1.7rem;
+  }
+
+  .advice-content p {
+    font-size: 1rem;
+  }
+
+  .advice-image-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .nature-leaf {
     font-size: 2rem;
   }
 }
