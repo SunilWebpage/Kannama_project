@@ -3,11 +3,7 @@ import "./songs.css";
 import "./message.css"; // Reusing leaf animations if not duplicated
 
 const songs = [
-    { id: 1, title: "Un Kanney Aayiram Kadha Pesudhey", src: "/assets/songs/Un_Kanney_Aayiram_Kadha_Pesudhey.mp3", artist: "Jakes Bejoy", genre: "Melody" },
-    { id: 2, title: "Levitating",       src: "/assets/songs/levitating.mp3", artist: "Dua Lipa", genre: "Pop" },
-    { id: 3, title: "Stay",             src: "/assets/songs/stay.mp3", artist: "The Kid LAROI", genre: "Pop" },
-    { id: 4, title: "Heat Waves",       src: "/assets/songs/heat-waves.mp3", artist: "Glass Animals", genre: "Indie" },
-    { id: 5, title: "As It Was",        src: "/assets/songs/as-it-was.mp3", artist: "Harry Styles", genre: "Pop" },
+    { id: 1, title: "Un Kanney Aayiram Kadha Pesudhey", src: "/public/assets/songs/Un_Kanney_Aayiram_Kadha_Pesudhey.mp3", artist: "Jakes Bejoy", genre: "Melody" }
 ];
 
 function formatTime(sec) {
@@ -121,17 +117,13 @@ function Songs() {
 
            
                 <div className="song-featured-photo absolute">
-                    <img src="/assets/collage-1.png" alt="Happy Moments" />
+                    <img src="/public/assets/collage-1.png" alt="Happy Moments" />
                 </div>
 
                
            
 
             <div className="player-wrapper">
-
-                <div className="song-featured-photo absolute right-264">
-                    <img src="/assets/nature-1.png" alt="Peaceful Nature" />
-                </div>
 
 
                 <ul className="songs-list">

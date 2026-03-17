@@ -12,7 +12,7 @@ function Message() {
             <main className="advice-sections">
                 <section className="advice-item">
                     <div className="advice-image-wrapper">
-                        <img src="/assets/sunrise-21.png" alt="Year 21 Sunrise" className="advice-image" />
+                        <img src="/public/assets/sunrise-21.png" alt="Year 21 Sunrise" className="advice-image" />
                     </div>
                     <div className="advice-content">
                         <h2>Embrace Growth</h2>
@@ -34,7 +34,7 @@ function Message() {
                         </p>
                     </div>
                     <div className="advice-image-wrapper">
-                        <img src="/assets/forest-path.png" alt="The Journey Ahead" className="advice-image" />
+                        <img src="/public/assets/forest-path.png" alt="The Journey Ahead" className="advice-image" />
                     </div>
                 </section>
             </main>

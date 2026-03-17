@@ -6,8 +6,8 @@ import './message.css';
 function Home() {
     return (
         <div className="home-container">
-            <img src="/assets/corner-decor.png" alt="" className="corner-photo left" />
-            <img src="/assets/corner-decor.png" alt="" className="corner-photo right" />
+            <img src="/public/assets/corner-decor.png" alt="" className="corner-photo left" />
+            <img src="/public/assets/corner-decor.png" alt="" className="corner-photo right" />
             
             <section className="hero-section">
                 <h1 className="birthday-title">Happy Birthday, Kannama</h1>
@@ -31,11 +31,11 @@ function Home() {
 <div>
 
     {/* <div className="polaroid p12 home_photo top-350 left-304 ">
-        <img src="/assets/images/img-1.jpeg" alt="Fresh Bloom" className="w-200" />
+        <img src="/public/assets/images/img-1.jpeg" alt="Fresh Bloom" className="w-200" />
     </div> */}
 
      <div className="polaroid p12 home_photo top-350 right-304  ">
-        <img src="/assets/images/img-1.jpeg" alt="Fresh Bloom" className="w-200" />
+        <img src="/public/assets/images/img-1.jpeg" alt="Fresh Bloom" className="w-200" />
     </div>
 </div>
 

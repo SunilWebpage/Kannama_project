@@ -48,7 +48,7 @@ function Wish() {
 
                 <div>
                     <div className="polaroid p12  top-350 right-264 h-500 fixed">
-        <img src="/assets/images/img-3.jpeg" alt="Fresh Bloom" className="w-200 h-500" />
+        <img src="/public/assets/images/img-3.jpeg" alt="Fresh Bloom" className="w-200 h-500" />
     </div>
 
    
