@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; 
 import './App.css';
 import Home from "./pages/home"; 
 import Nav from "./pages/nav"; 
@@ -9,9 +9,9 @@ import Photos from "./pages/photos";
 import Songs from "./pages/songs";
 
 function App() {
-  const basename = process.env.PUBLIC_URL || '/';
   return (
-    <Router basename={basename}>
+    /* HashRouter doesn't need 'basename', so this is much simpler! */
+    <Router>
       <Nav/>
       <Routes>
         <Route path="/" element={<Home/>} /> 
