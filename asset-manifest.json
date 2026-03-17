@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Kannama_project/static/css/main.15c69013.css",
+    "main.js": "/Kannama_project/static/js/main.d9c05557.js",
+    "static/js/453.ee87fd06.chunk.js": "/Kannama_project/static/js/453.ee87fd06.chunk.js",
+    "static/media/img-1.jpeg": "/Kannama_project/static/media/img-1.b44fb6e7c8630b9649db.jpeg",
+    "index.html": "/Kannama_project/index.html",
+    "main.15c69013.css.map": "/Kannama_project/static/css/main.15c69013.css.map",
+    "main.d9c05557.js.map": "/Kannama_project/static/js/main.d9c05557.js.map",
+    "453.ee87fd06.chunk.js.map": "/Kannama_project/static/js/453.ee87fd06.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15c69013.css",
+    "static/js/main.d9c05557.js"
+  ]
+}
