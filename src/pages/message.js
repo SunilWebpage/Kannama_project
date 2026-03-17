@@ -1,6 +1,7 @@
 import React from 'react';
 import './message.css';
 import { assetPath } from '../utils/assets';
+import { Link } from 'react-router-dom';
 
 function Message() {
     const sunriseImage = assetPath('/assets/sunrise-21.png');
@@ -43,7 +44,7 @@ function Message() {
                 </section>
 
                 <button className='button' >
-                    <a href="/songs">Click here to listen songs</a>
+                    <Link to="/songs">Click here to listen songs</Link>
                 </button>
 
 

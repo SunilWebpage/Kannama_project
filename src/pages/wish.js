@@ -1,6 +1,7 @@
 import React from 'react';
 import './wish.css';
 import { assetPath } from '../utils/assets';
+import { Link } from 'react-router-dom';
 
 function Wish() {
     const wishPhoto = assetPath('/assets/images/img-3.jpeg');
@@ -57,7 +58,7 @@ function Wish() {
                 </div>
 
 
-                <button className="button"><a href="/message">You Have Some Message</a></button>
+                <button className="button"><Link to="/message">You Have Some Message</Link></button>
 
 
             </main>

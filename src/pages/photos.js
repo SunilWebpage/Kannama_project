@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './photos.css';
 import './message.css'; // Reusing leaf animations
 import { assetPath } from '../utils/assets';
@@ -87,7 +89,7 @@ function Photos() {
 
 
         <button className='button'>
-            <a href="/marry">Click To Answer</a>
+            <Link to="/marry">Click To Answer</Link>
         </button>
             {/* Nature Decorations */}
             <div className="nature-leaf leaf-1">🍃</div>

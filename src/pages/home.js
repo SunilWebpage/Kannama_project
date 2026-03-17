@@ -2,6 +2,7 @@
 import React from 'react';
 import './home.css';
 import './message.css';
+import { Link } from 'react-router-dom';
 import { assetPath } from '../utils/assets';
 
 function Home() {
@@ -24,7 +25,7 @@ function Home() {
                 </p>
 
                 <div className="heart-icon">❤️</div>
-                <div className="button"><a href="/wish" >Click Me To See More</a></div>
+                <div className="button"><Link to="/wish" >Click Me To See More</Link></div>
 
 
             </section>

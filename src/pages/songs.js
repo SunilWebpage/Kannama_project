@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import "./songs.css";
 import "./message.css"; // Reusing leaf animations if not duplicated
 import { assetPath } from "../utils/assets";
+import { Link } from 'react-router-dom';
 
 const songs = [
     { id: 1, title: "Un Kanney Aayiram Kadha Pesudhey", src: assetPath("/assets/songs/Un_Kanney_Aayiram_Kadha_Pesudhey.mp3"), artist: "Pradheep Kumar", genre: "Melody" },
@@ -166,7 +167,7 @@ function Songs() {
 
 
                 <button className='button'>
-                    <a href="/photos">Click here to see photos</a>
+                    <Link to="/photos">Click here to see photos</Link>
                 </button>
 
 
