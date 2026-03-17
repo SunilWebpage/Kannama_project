@@ -1,7 +1,11 @@
 import React from 'react';
 import './message.css';
+import { assetPath } from '../utils/assets';
 
 function Message() {
+    const sunriseImage = assetPath('/assets/sunrise-21.png');
+    const forestImage = assetPath('/assets/forest-path.png');
+
     return (
         <div className="message-container">
             <header className="message-header">
@@ -12,7 +16,7 @@ function Message() {
             <main className="advice-sections">
                 <section className="advice-item">
                     <div className="advice-image-wrapper">
-                        <img src="/public/assets/sunrise-21.png" alt="Year 21 Sunrise" className="advice-image" />
+                        <img src={sunriseImage} alt="Year 21 Sunrise" className="advice-image" />
                     </div>
                     <div className="advice-content">
                         <h2>Embrace Growth</h2>
@@ -34,7 +38,7 @@ function Message() {
                         </p>
                     </div>
                     <div className="advice-image-wrapper">
-                        <img src="/public/assets/forest-path.png" alt="The Journey Ahead" className="advice-image" />
+                        <img src={forestImage} alt="The Journey Ahead" className="advice-image" />
                     </div>
                 </section>
             </main>

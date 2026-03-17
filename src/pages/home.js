@@ -2,12 +2,16 @@
 import React from 'react';
 import './home.css';
 import './message.css';
+import { assetPath } from '../utils/assets';
 
 function Home() {
+    const cornerDecor = assetPath('/assets/corner-decor.png');
+    const featuredPhoto = assetPath('/assets/images/img-1.jpeg');
+
     return (
         <div className="home-container">
-            <img src="/public/assets/corner-decor.png" alt="" className="corner-photo left" />
-            <img src="/public/assets/corner-decor.png" alt="" className="corner-photo right" />
+            <img src={cornerDecor} alt="" className="corner-photo left" />
+            <img src={cornerDecor} alt="" className="corner-photo right" />
             
             <section className="hero-section">
                 <h1 className="birthday-title">Happy Birthday, Kannama</h1>
@@ -31,11 +35,11 @@ function Home() {
 <div>
 
     {/* <div className="polaroid p12 home_photo top-350 left-304 ">
-        <img src="/public/assets/images/img-1.jpeg" alt="Fresh Bloom" className="w-200" />
+        <img src={featuredPhoto} alt="Fresh Bloom" className="w-200" />
     </div> */}
 
      <div className="polaroid p12 home_photo top-350 right-304  ">
-        <img src="/public/assets/images/img-1.jpeg" alt="Fresh Bloom" className="w-200" />
+        <img src={featuredPhoto} alt="Fresh Bloom" className="w-200" />
     </div>
 </div>
 

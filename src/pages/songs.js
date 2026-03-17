@@ -1,9 +1,10 @@
 import { useState, useRef, useEffect } from "react";
 import "./songs.css";
 import "./message.css"; // Reusing leaf animations if not duplicated
+import { assetPath } from "../utils/assets";
 
 const songs = [
-    { id: 1, title: "Un Kanney Aayiram Kadha Pesudhey", src: "/public/assets/songs/Un_Kanney_Aayiram_Kadha_Pesudhey.mp3", artist: "Jakes Bejoy", genre: "Melody" }
+    { id: 1, title: "Un Kanney Aayiram Kadha Pesudhey", src: assetPath("/assets/songs/Un_Kanney_Aayiram_Kadha_Pesudhey.mp3"), artist: "Jakes Bejoy", genre: "Melody" }
 ];
 
 function formatTime(sec) {
@@ -35,7 +36,7 @@ function SongRow({ song, isPlaying, onToggle }) {
             audio.pause();
             audio.src = "";
         };
-    }, [song.src]);
+    }, [song.src, onToggle]);
 
     // Sync play/pause from parent
     useEffect(() => {
@@ -103,6 +104,8 @@ function SongRow({ song, isPlaying, onToggle }) {
 
 function Songs() {
     const [playingId, setPlayingId] = useState(null);
+    const featuredPhoto = assetPath("/assets/collage-1.png");
+    const playerBackground = assetPath("/assets/images/img-1.jpeg");
 
     const handleToggle = (id) => {
         setPlayingId(prev => (prev === id ? null : id));
@@ -117,13 +120,13 @@ function Songs() {
 
            
                 <div className="song-featured-photo absolute">
-                    <img src="/public/assets/collage-1.png" alt="Happy Moments" />
+                    <img src={featuredPhoto} alt="Happy Moments" />
                 </div>
 
                
            
 
-            <div className="player-wrapper">
+            <div className="player-wrapper" style={{ backgroundImage: `url(${playerBackground})` }}>
 
 
                 <ul className="songs-list">
@@ -152,9 +155,5 @@ function Songs() {
         </div>
     );
 }
-
-// Keep the old styles object as a fallback or if needed, but we'll move most to CSS
-// I've simplified it to avoid conflicts with the new CSS approach
-const styles = {}; 
 
 export default Songs;
